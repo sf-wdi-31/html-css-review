@@ -96,7 +96,7 @@ Answer the questions assigned to your group. Feel free to do some research if yo
 * What are inline elements? What does `display: inline;`  do?
 * What is inline-block?
 
-
+Refer to [resource.md](resource.md), [WDI fundamentals](http://fundamentals.generalassemb.ly/), or the sites in [More Resources](#more-resources) for information on these questions!
 
 ## Independent Practice
 
@@ -115,3 +115,12 @@ The most important things to practice right now are:
 - following best practices to write clean, readable code.
 - memorizing syntax for CSS rules, including tag, id, and element selectors.  
 - linking external CSS files to HTML and debugging issues with relative and absolute paths.
+
+
+### More Resources
+
+* [CSS Zen Garden](http://www.csszengarden.com/)
+* [HTML Reference from MDN](https://developer.mozilla.org/en-US/docs/Web/HTML)
+* [CSS Reference from MDN](https://developer.mozilla.org/en-US/docs/Web/CSS)
+* [CSS-tricks](https://css-tricks.com/)
+
