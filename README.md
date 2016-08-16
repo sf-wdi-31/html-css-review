@@ -38,7 +38,7 @@ CSS lets us style a web page, creating sites that stand out visually. It is an i
 
 ![calder-mobile](https://cloud.githubusercontent.com/assets/7833470/10673045/8edabf9c-78a8-11e5-9c61-5587d2389da9.jpg)
 
-Many sources compare well-structured HTML to a tree. We can also think of it as a top-down architecture, like a mobile.
+Many sources compare well-structured HTML to a tree. We can also think of it as a top-down architecture, like a [mobile](https://en.wikipedia.org/wiki/Mobile_(sculpture)).
 
 If you were asked to build this mobile with HTML and CSS, what classes and ids would you use?
 
