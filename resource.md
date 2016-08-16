@@ -367,3 +367,11 @@ While floats make other elements aware of their location and get text hugs, clea
 What would happen if we change the "square2" div's positioning from `float:left` to `clear: right`?
 
 `Clear` is saying "I'm not sure how much space I'm going to take but whatever it is clear off my right side." The text respects its wishes and drops to the line below.
+
+
+### Recommended Resources
+
+* [CSS Zen Garden](http://www.csszengarden.com/)
+* [HTML Reference from MDN](https://developer.mozilla.org/en-US/docs/Web/HTML)
+* [CSS Reference from MDN](https://developer.mozilla.org/en-US/docs/Web/CSS)
+* [CSS-tricks](https://css-tricks.com/)
