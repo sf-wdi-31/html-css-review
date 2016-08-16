@@ -7,28 +7,26 @@ Market: SF
 
 # HTML and CSS Resource
 
-## HTML
+**Contents**
 
-### Tags and Attributes
+* [HTML Tags and Attributes](#html-tags-and-attributes)  
+* [Semantic HTML](#semantic-html)   
+* [Linking CSS to HTML](#linking-css-to-html)  
+* [Specificity](#specificity)   
+* [Box Model](#box-model)  
+* [Display](#display)  
+* [Position](#position)  
+* [Float and Clear](#float-and-clear)
 
-- HTML tags allow you to set up your document's structure and content.
+### HTML Tags and Attributes
 
-- Attributes allow you to add additional information to a tag.
+HTML tags allow you to set up your document's organization and content.
 
-- "Tags" in HTML code become "elements" in the browser.
+"Tags" in HTML code become "elements" in the browser.
+
+Attributes allow you to add additional information to a tag.  Some commonly used elements with required attributes are `input`, `a`, and `img`.
 
 
-<!-- ### Inline and Block Elements
-
-Inline elements -->
-
-### Semantic HTML
-
-Generic page divisions or `div`s are created with the `<div>` tag. They are empty rectangles, and `div` doesn't give any meaningful information beyond that.
-
-Recent versions HTML have introduced more semantic tags with names that mirror their purposes: `header`, `footer`, `nav`, `figure` etc.
-
-![semantic html elements: header, nav, article, section, aside, footer](https://cloud.githubusercontent.com/assets/3254910/12483331/30f9061a-c009-11e5-85e6-43a447431a10.gif)
 
 #### `input`
 
@@ -61,9 +59,16 @@ Inputs come in different "types" to meaningfully specify what kind of data is be
 ````
 
 
-## CSS
+### Semantic HTML
 
-CSS provides the look and feel of the website.
+Generic page divisions or `div`s are created with the `<div>` tag. They are empty rectangles, and `div` doesn't give any meaningful information beyond that.
+
+Recent versions HTML have introduced more semantic tags with names that mirror their purposes: `header`, `footer`, `nav`, `figure` etc.
+
+![semantic html elements: header, nav, article, section, aside, footer](https://cloud.githubusercontent.com/assets/3254910/12483331/30f9061a-c009-11e5-85e6-43a447431a10.gif)
+
+
+
 
 ### Linking CSS to HTML
 
@@ -75,7 +80,7 @@ There are three different ways to use CSS to style your HTML:
 
 #### Inline Styles
 
-To use inline styles, add the style attribute to the relevant tag. The style attribute can contain any CSS property. The example shows us changing the HTML body's background to red:
+To use inline styles, add the `style` attribute to the relevant tag. The style attribute can contain any CSS property. The example shows us changing the HTML body's background to red:
 
 ```html
 
@@ -84,7 +89,7 @@ To use inline styles, add the style attribute to the relevant tag. The style att
    <head>
      <title>Intro to CSS</title>
    </head>
-   <body style="background:red">
+   <body style="background:red;">
    </body>
  </html>
 ```
@@ -160,7 +165,7 @@ Developers often have a specific folder for stylesheets, as large applications c
 ```
 
 
-Our stylesheet file:
+The stylesheet file might look like this:
 
 ```css
 
@@ -208,12 +213,12 @@ A couple of rules to think about:
 
 
 
-#### Box Model
+### Box Model
 
 
-All HTML elements can be considered boxes. Even if you see a circle, it's living within a box.
+All HTML elements are boxes by default. Even if you see a circle, it's living within or made from a box.
 
-The CSS box model describes this principal - a box wraps around all HTML elements, and it consists of: margins, borders, padding, and the actual content.  This model allows us to place a border around elements and space elements in relation to other elements.
+The CSS box model describes ways to modify the size and shape of a box, and it consists of: margin, border, padding, and the actual content.  
 
 With CSS properties and values, it is possible to apply specific styles to each of these elements, and change the way they behave and/or display on the page.
 
@@ -225,7 +230,6 @@ _From [www.theslate.org](http://www.theslate.org)_
 
 But what do these different layers mean, and how are they related to one another?
 
-
 * **Margin** - clears an area around the border; the margin does not have a background color, it is completely transparent
 
 * **Border** - a border that goes around the padding and content; the border is affected by the background color of the box
@@ -234,9 +238,7 @@ But what do these different layers mean, and how are they related to one another
 
 * **Content** - The content of the box, where text and images appear
 
-### Taking Up Space Using `display`
-
-Cool, right? Each HTML element gets its own box to live in.
+### Display
 
 The box model shows us why, until now, your HTML elements have been sitting on top of one another: by default, they take up the full width of the page.
 
@@ -256,14 +258,12 @@ Another CSS property, `position`, can take `relative` or `absolute` values, amon
 
 #### Static Positioning
 
-HTML elements are positioned static by default. A "static positioned" element is always positioned according to the normal flow of the page and are not affected by the top, bottom, left, and right properties.
+HTML elements are positioned static by default. A "static positioned" element is always positioned according to the normal flow of the page and not affected by the `top`, `bottom`, `left`, and `right` properties.
 
-Again, the default positioning for all elements is static. This means that no positioning has been applied and the elements occurs where they normally would in the document.
-
-If we revisit our squares from earlier in class:
+Consider a square:
 
 ```css
-#container {
+div#square {
     background-color: gray;
     position: static;
     height: 500px;
@@ -271,7 +271,7 @@ If we revisit our squares from earlier in class:
 }
 ```
 
-You rarely explicitly declare `position:static` like this because it is the default.
+This will show underneath the previous element (since `div` is a block element) just as it would without a `position` CSS property.  You rarely explicitly declare `position: static;` like this because it is the default.
 
 #### Fixed Positioning
 
@@ -280,7 +280,7 @@ An element with fixed position is positioned relative to the browser window.  It
 Try it out:
 
 ```css
-#square2 {
+div#square2 {
     position: fixed;
     width: 100%;
     height: 100px;
@@ -293,7 +293,7 @@ Try it out:
 
 #### Absolute and Relative Positioning
 
-Specifying `position:absolute` _removes the element from the document_ and places it exactly where you tell it to be.
+Specifying `position:absolute` _removes the element from the document_ and places it exactly where you tell it to be, in relation to its parent. 
 
 ```css
 #square1 {
@@ -326,8 +326,9 @@ The relative positioning on the parent is what matters here. This what would hap
 
 In this small example, it doesn't seem to matter much, but it really is a significant change.
 
-> The "absolutely positioned" elements are positioning themselves in relation to the body element, instead of their direct parent. So if the browser window grows, that element in the bottom left is going to stick with the browser window.
+> Without a relative parent, "absolutely positioned" elements are positioning themselves in relation to the body element, instead of their direct parent. So if the browser window grows, that element in the bottom left is going to stick with the browser window.
 
+Using aboslute and relative positioning for layout has fallen out of favor because it's hard to allow flexibility for different screen sizes. 
 
 ### Float and Clear
 
@@ -357,7 +358,7 @@ Consider the html below:
 }
 ```
 
-The `float: left;` line tells the browser that the "square2" div wants to be as left as possible, so the browser kindly wraps it in a nice text hug.
+The `float: left;` line tells the browser that the "square2" div wants to be as far left as possible, so the browser kindly wraps it in a nice text hug. 
 
 ####  Clear
 
