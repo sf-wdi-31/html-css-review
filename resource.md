@@ -17,6 +17,7 @@ Market: SF
 * [Display](#display)  
 * [Position](#position)  
 * [Float and Clear](#float-and-clear)
+* [More Resources](#more-resources)
 
 ### HTML Tags and Attributes
 
@@ -369,7 +370,7 @@ What would happen if we change the "square2" div's positioning from `float:left`
 `Clear` is saying "I'm not sure how much space I'm going to take but whatever it is clear off my right side." The text respects its wishes and drops to the line below.
 
 
-### Recommended Resources
+### More Resources
 
 * [CSS Zen Garden](http://www.csszengarden.com/)
 * [HTML Reference from MDN](https://developer.mozilla.org/en-US/docs/Web/HTML)
