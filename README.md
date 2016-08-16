@@ -52,6 +52,10 @@ If you were asked to build this mobile with HTML and CSS, what classes and ids w
 
 3. Draw the tree structure for the HTML you designed.
 
+4. What are some CSS text, font, or color rules you might use to create this site?
+
+5. What are some CSS layout or positioning rules you might use to create this site?
+
 4. Bonus: what portions of the web page in the image above might be controlled by JavaScript?
 
 
