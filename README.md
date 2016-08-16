@@ -98,7 +98,7 @@ Answer the questions assigned to your group. Feel free to do some research if yo
 
 
 
-## Training
+## Independent Practice
 
 Check your understanding with this site recreation [training](https://github.com/sf-wdi-31/site-recreation)!  This is a common web development interview task, especially for front end roles.
 
