@@ -13,7 +13,7 @@ Market: SF
 
 HTML is the oldest and most fundamental language of the web.  It contains a page's content, provides structure for that content, and gives the browser important metadata about the page.
 
-CSS lets us style a web page, creating sites that stand out visually. It is an incredibly powerful tool
+CSS lets us style a web page, creating sites that stand out visually. It is an incredibly powerful tool too.
 
 ### What are the objectives?
 <!-- specific/measurable goal for students to achieve -->
